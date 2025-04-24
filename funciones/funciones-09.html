@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones 09</title>
+
+</head>
+<body>
+    <input type="text" id="primero" placeholder="Introduce el primer número">
+    <br>
+
+    <input type="text" id="segundo" placeholder="Introduce el segundo número">
+    <br>
+
+    <button onclick="dimeSuma()">Calcular Suma</button>
+
+    <p id="result"></p>
+
+    <script>
+        function dimeSuma() {
+            const primero = parseFloat(document.getElementById('primero').value);
+            const segundo = parseFloat(document.getElementById('segundo').value);
+            const suma = primero + segundo;
+            document.getElementById('result').textContent = `La suma es: ${suma}`;
+        }
+    </script>
+</body>
+</html>
