@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de Datos</title>
+    <script>
+        function calcula()
+        {
+            let numero = Document.fdatos.entrada.value;
+            let dato = document.getElementById("Lista");
+            let valor = dato.options[lista.selectedIndex].value;
+
+            let resultado = numero * valor;
+            document.getElementById("salida").innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+    <form name="fdatos">
+        Introduce numero: <input type="text" size="10" name="entrada"/>
+        <b> x </b>
+        <select id="Lista" onchange="calcula()">
+            <option value="1" selected>uno</option>
+            <option value="2">dos</option>
+            <option value="3">tres</option>
+            <option value="4">cuatro</option>
+        </select>
+    </form>
+
+    <div id="salida"></div>
+</body>
+</html>
