@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Clicks</title>
+</head>
+<body>
+    <p>Pulsa en el botón</p>
+    <button id="contadorBtn">Clicks: 0</button>
+    <script>
+        let contador = 0;
+        const btn = document.getElementById('contadorBtn');
+        btn.addEventListener('click', () => {
+            contador++;
+            btn.textContent = "Clicks: "+contador;
+        });
+    </script>
+</body>
+</html>
+
+
+
+
